@@ -30,7 +30,7 @@ jobs:
         terraform_wrapper: false
 
     - name: Terraform Init
-      run: terraform init
+      run: cd infra && terraform init
 
     - name: Terraform Plan
       if: github.ref != 'refs/heads/main'
