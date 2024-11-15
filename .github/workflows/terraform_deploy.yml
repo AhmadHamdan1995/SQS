@@ -34,8 +34,8 @@ jobs:
 
     - name: Terraform Plan
       if: github.ref != 'refs/heads/main'
-      run: terraform plan
+      run: cd infra && terraform plan 
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'
-      run: terraform apply -auto-approve
+      run: cd infra && terraform apply -auto-approve
