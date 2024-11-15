@@ -5,8 +5,8 @@ resource "aws_lambda_function" "sqs_lambda" {
   runtime       = "python3.10"
   timeout       = 30
 
-  filename = "lambda.zip"
-  source_code_hash = filebase64sha256("lambda.zip")
+  filename = "lambda_sqs.zip"
+  source_code_hash = filebase64sha256("lambda_sqs.zip")
 
   environment {
     variables = {
