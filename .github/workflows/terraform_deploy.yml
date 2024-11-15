@@ -3,7 +3,7 @@ name: Terraform ci/cd
 on:
   push:
     branches:
-      - main
+      - master
       - dev
 
 env:
