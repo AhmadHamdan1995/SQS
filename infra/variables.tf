@@ -15,3 +15,16 @@ variable "s3_bucket_name" {
   type        = string
   default     = "pgr301-couch-explorers"
 }
+
+# oppgave 4
+
+variable "alarm_threshold_seconds" {
+  description = "Threshold in seconds of ApproximateAgeOfOldestMessage"
+  type        = number
+  default     = 80
+}
+
+variable "notification_email" {
+  description = "Email address for CloudWatch alarm to notify"
+  type        = string
+}
