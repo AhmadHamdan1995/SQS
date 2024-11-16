@@ -27,5 +27,5 @@ variable "alarm_threshold_seconds" {
 variable "notification_email" {
   description = "Email address for CloudWatch alarm to notify"
   type        = string
-  value       = "ApproximateAgeOfOldestMessage metric has exceeded the specified limit (80s)."
+  default       = "ApproximateAgeOfOldestMessage metric has exceeded the specified limit (80s)."
 }
